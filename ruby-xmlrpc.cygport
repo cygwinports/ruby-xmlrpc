@@ -1,0 +1,16 @@
+inherit rubygem
+
+NAME="ruby-xmlrpc"
+VERSION=0.3.0
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby XMLRPC module"
+DESCRIPTION="XMLRPC is a lightweight protocol that enables remote procedure
+calls over HTTP."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_xmlrpc_CONTENTS=${RUBYGEM_INSTDIR#/}" "${RUBYGEM_SPEC#/}
+ruby_xmlrpc_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
+
